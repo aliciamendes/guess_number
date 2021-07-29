@@ -1,0 +1,157 @@
+ /* Reset */
+
+ :root {
+     /* cores teste*/
+     --header-background: #441152;
+     --title-header: #f0e2f7;
+     --font-color: #080f30;
+     --button-color: #84229F;
+     --input-color: #D299DA;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     font-family: sans-serif;
+ }
+
+ html {
+     font-size: 62.5%;
+ }
+
+ /* Cabeçalho*/
+
+ header {
+     width: 100%;
+     text-align: center;
+     padding: 2rem;
+     box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.5);
+     background-color: var(--header-background);
+     /*Mudar cor*/
+ }
+
+ header h1 {
+     color: var(--title-header);
+     font-size: 4rem;
+     font-weight: 700;
+ }
+
+ /* Container */
+
+ .container {
+     width: 100%;
+     height: 80vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+     background: var(--title-header);
+     /* background: linear-gradient(to right, #ea8d8d, #a890fe); */
+     /*alterar cor*/
+ }
+
+ /* Formulário */
+
+ .container form {
+     background: var(--moss);
+     display: flex;
+     flex-direction: column;
+     width: 50%;
+     padding: 2rem;
+     margin-top: 5rem;
+     border-radius: 5px;
+ }
+
+ .container label {
+     color: var(--font-color);
+     font-size: 1.8rem;
+     font-weight: 700;
+     font-family: sans-serif;
+ }
+
+ .container input {
+     border: 2px solid var(--input-color);
+     outline: 0;
+     margin: 2rem 0;
+     padding: 0.5rem 1rem;
+     font-size: 1.8rem;
+     border-radius: 5px;
+ }
+
+ .container input:focus {
+     box-shadow: inset 1px 2px 4px 2px rgba(0, 0, 0, 0.1);
+ }
+
+ .container form button {
+     cursor: pointer;
+     margin-top: 0.5rem;
+     border: 0;
+     outline: 0;
+     padding: 1.6rem;
+     border-radius: 5px;
+     font-size: 2rem;
+     font-family: sans-serif;
+     font-weight: 600;
+     transition: 0.3s ease-in-out;
+     background: var(--button-color);
+     color: var(--title-header);
+ }
+
+ .container form button:hover {
+     color: var(--button-color);
+     background: var(--title-header);
+     border: 2px solid var(--input-color);
+ }
+
+ /* Section */
+
+ .result-container {
+     margin-top: 4rem;
+     width: 46.9%;
+     padding: 2rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+     color: var(--title-header);
+     border-radius: 5px;
+     background: linear-gradient(98.65deg, #FAAD37 6.55%, #E9633E 21.6%, #C43F6E 42.49%, #91328C 64.34%, #5B4FA1 87.17%, #7000FF 99.79%);
+ }
+
+ .result-container h2 {
+     font-size: 2rem;
+ }
+
+ .result-container span {
+     font-size: 1.6rem;
+ }
+
+ #button-restart {
+     font-size: 1.6rem;
+     padding: 1.2rem;
+     margin-top: 3rem;
+     background: var(--input-color);
+     border: 0;
+     color: var(--title-header);
+     font-weight: 700;
+     border-radius: 5px;
+ }
+
+ #button-restart:hover {
+     background: var(--title-header);
+     border: 1px solid var(--font-color);
+     color: var(--input-color);
+ }
+
+ /* Rodapé */
+
+ footer {
+     display: flex;
+     justify-content: center;
+     padding: 0.8rem;
+     font-size: 1.2rem;
+     color: var(--font-color);
+     background-color: var(--title-header);
+ }
